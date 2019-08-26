@@ -19,6 +19,8 @@ int main(int argc, char *argv[]) {
     printf("El resultado de el segundo calculo es; %.2f\n", Calculo2);
     Calculo3= (x-(1-(x-2)/3))*2/3+1;
     printf("El resultado de el tercer calculo es: %.2f\n", Calculo3);
+    Calculo4= 2-(-2*(x+1)-(x-3)/2);
+     printf("El resultado de el cuarto calculo es: %.2f\n", Calculo4);
 return 0;
 }
 
