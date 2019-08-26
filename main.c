@@ -10,10 +10,14 @@
 */
 
 int main(int argc, char *argv[]) {
-    float x,Calculo1;
+    float x,Calculo1, Calculo2, Calculo3, Calculo4;
     printf("\nDame el valor de x:");
     scanf("%f", &x);
     Calculo1=((x-1)/4)-((x-5)/36);
     printf("El resultado de el primer calculo es; %.2f\n", Calculo1);
-return 0;a
+    Calculo2= 6*(((x+1)/8)-((2*x-3)/16));
+    printf("El resultado de el segundo calculo es; %.2f\n", Calculo2);
+    
+return 0;
 }
+
