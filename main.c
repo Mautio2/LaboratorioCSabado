@@ -16,7 +16,7 @@
    scanf("%d", &x);
    SUM=x;
    printf("Desea introducir otro numero entero SI=1 NO=0\n");
-   scanf("%d", &r);
+   scanf("%d", &r);s
    while(r==1){
    printf("Deme el numero:");
    scanf("%d", &x);
@@ -24,9 +24,18 @@
    printf("Desea introducir otro numero enteroSI=1 NO=0\n");
    scanf("%d", &r);
 }
-   printf("La suma de los numeros es %d", SUM);
+   printf("La suma de los numeros es %d\n", SUM);
    
    /*ACTIVIDAD 2*/
+   
+   int s=0;
+   while(s<=100)
+   { printf("\nDame un numero entero: ");
+   scanf("%d", &s);
+    printf("%d", s);
+   }
+   
+   
    
    
 
