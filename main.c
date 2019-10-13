@@ -12,12 +12,12 @@ int main() {
 	
 	/*Activdad 1*/
 	
-	char cadena1[6];
+	char cadena1[6]; /*Se establece la cadena de caracteres*/
 	printf("Programa que identifique si una cadena de caracteres es un palindromo\n");
-	printf("Introduzca el primer caracter:\n");
+	printf("Introduzca el primer caracter:\n"); /*Se introducen los valores de la cadena uno a uno*/
 	scanf("%c", &cadena1[0]);
 	printf("\nIntroduzca el siguiente caracter:\n");
-	fflush(stdin);
+	fflush(stdin); /*se utiliza esta funcion para limpiar el buffer*/
 	scanf("%c", &cadena1[1]);
 	printf("Introduzca el siguiente caracter:\n");
 	fflush(stdin);
@@ -31,6 +31,7 @@ int main() {
 	printf("Introduzca el siguiente caracter:\n");
 	fflush(stdin);
 	scanf("%c", &cadena1[5]);
+	/*Se compara cada uno de los elementos, si si cumple la condicion entonces es palindromo*/
 	if (cadena1[0]==cadena1[5]&&cadena1[1]==cadena1[4]&&cadena1[2]==cadena1[3]){
 	
 		
@@ -39,85 +40,34 @@ int main() {
 		else {
 			printf("La cadena de caracteres %c%c%c%c%c%c no es un palindromo \n" , cadena1[0], cadena1[1], cadena1[2], cadena1[3], cadena1[4], cadena1[5]);
 		
-		} 
+		} /*Se imprimen resultados depnendiendo del caso*/
 	
 		
 	
 	/*Actividad 2*/
 	
-	printf(" Programa que calcule cuantas letras  se repiten en un arreglo de 20 caracteres");
-	char cadena2[20];
-	int a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0,i=0,j=0,k=0,l=0,m=0,n=0, o=0, p=0, q=0, r=0, s=0, t=0, u=0, v=0, w=0, x=0, y=0, z=0;
-	printf("Introduzca el primer caracter:\n");
-	scanf("%c", &cadena2[0]);
-	printf("\nIntroduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[1]);
-	printf("Introduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[2]);
-	printf("Introduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[3]);
-	printf("Introduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[4]);
-	printf("Introduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[5]);
-	printf("Introduzca el primer caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[6]);
-	printf("\nIntroduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[7);
-	printf("Introduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[8]);
-	printf("Introduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[9]);
-	printf("Introduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[10]);
-	printf("Introduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[10);
-	fflush(stdin);
-	printf("Introduzca el primer caracter:\n");
-	scanf("%c", &cadena2[11]);
-	printf("\nIntroduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[12]);
-	printf("Introduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[13]);
-	printf("Introduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[14]);
-	printf("Introduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[15]);
-	printf("Introduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[16]);
-	fflush(stdin);
-	printf("Introduzca el primer caracter:\n");
-	scanf("%c", &cadena2[17]);
-	printf("\nIntroduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[18]);
-	printf("Introduzca el siguiente caracter:\n");
-	fflush(stdin);
-	scanf("%c", &cadena2[19]);
-	
+	printf(" Programa que calcule cuantas letras  se repiten en un arreglo de 20 caracteres\n");
+	char cadena2[20]; /*Se establece cadena de caracteres*/
+	int i=0; /*contador para los caracteres*/
+	int j=0; /*contador para los contadores y las letras del abecedario*/
+	int contador[26]={0};
+	char letras[26]="abcdefghijklmnopqrstuvwxyz"; /* Se usan todas letras del abcedario para facilitar el prohgrama*/
+		printf("Ingresa 20 letras:\n");
+	fflush(stdin); /*se utiliza esta funcion para limpiar el buffer*/
+	gets(cadena2);/*Se introducen todos los caracteres*/
+	/*ciclo for externo*/
+	for(j=0;j<26; j++){
+	/*Ciclo interno*/
+	for(i=0; i<20; i++){
 
+	if(cadena2[i]==letras[j]){ contador[j]++; /*conficional para comparar cada una de las letras en el arreglo y contar cuantas se repiten*/
+	}
+}
+}
+/*ciclo for para imprimir*/
+for(j=0;j<26;j++){
 
-	
-	
-	
+printf("\n%c: %d", letras[j], contador[j]);}
 
-	
-	
-	return 0;
+return 0;
 }
